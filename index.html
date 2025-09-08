@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
@@ -20,14 +20,14 @@
             margin: 0 auto;
             padding: 40px 20px;
         }
-
+        
         h1 {
             font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 20px;
             color: #1f2328;
         }
-
+        
         h2 {
             font-size: 1.5rem;
             font-weight: 600;
@@ -36,96 +36,136 @@
             border-bottom: 1px solid #d1d9e0;
             padding-bottom: 8px;
         }
-
+        
         h3 {
             font-size: 1.2rem;
             font-weight: 600;
             margin: 20px 0 10px 0;
             color: #1f2328;
         }
-
+        
         .intro {
             font-size: 1.1rem;
             margin-bottom: 30px;
             color: #656d76;
         }
-
+        
         .contact-info {
             margin-bottom: 30px;
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
         }
-
+        
         .contact-info a {
             color: #0969da;
             text-decoration: none;
             font-weight: 500;
         }
-
+        
         .contact-info a:hover {
             text-decoration: underline;
         }
-
+        
+        .header-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .header-text {
+            flex: 1;
+        }
+        
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d1d9e0;
+            flex-shrink: 0;
+        }
+        
+        .resume-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #1f883d;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            margin-top: 20px;
+            transition: background-color 0.2s;
+        }
+        
+        .resume-download:hover {
+            background-color: #1a7f37;
+            text-decoration: none;
+            color: white;
+        }
+        
         .section {
             margin-bottom: 40px;
         }
-
+        
         .experience-item, .project-item, .education-item {
             margin-bottom: 30px;
         }
-
+        
         .job-title {
             font-weight: 600;
             color: #1f2328;
         }
-
+        
         .company {
             color: #0969da;
             text-decoration: none;
             font-weight: 500;
         }
-
+        
         .company:hover {
             text-decoration: underline;
         }
-
+        
         .date {
             color: #656d76;
             font-size: 0.9rem;
             margin-left: 10px;
         }
-
+        
         .description {
             margin-top: 8px;
             color: #24292f;
         }
-
+        
         .description ul {
             margin-left: 20px;
             margin-top: 8px;
         }
-
+        
         .description li {
             margin-bottom: 4px;
         }
-
+        
         .project-link {
             color: #0969da;
             text-decoration: none;
             font-weight: 500;
         }
-
+        
         .project-link:hover {
             text-decoration: underline;
         }
-
+        
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
-
+        
         .skill-tag {
             background-color: #f6f8fa;
             border: 1px solid #d1d9e0;
@@ -134,26 +174,26 @@
             font-size: 0.875rem;
             color: #24292f;
         }
-
+        
         .award-item {
             margin-bottom: 15px;
         }
-
+        
         .award-title {
             font-weight: 600;
             color: #1f2328;
         }
-
+        
         .award-org {
             color: #0969da;
             text-decoration: none;
             font-weight: 500;
         }
-
+        
         .award-org:hover {
             text-decoration: underline;
         }
-
+        
         .project-status {
             display: inline-block;
             background-color: #dafbe1;
@@ -164,37 +204,37 @@
             border-radius: 12px;
             margin-left: 8px;
         }
-
+        
         .project-status.planned {
             background-color: #fff8c5;
             color: #9a6700;
         }
-
+        
         .project-status.in-progress {
             background-color: #ddf4ff;
             color: #0969da;
         }
-
+        
         @media (max-width: 768px) {
             body {
                 padding: 20px 15px;
             }
-
+            
             h1 {
                 font-size: 2rem;
             }
-
+            
             .contact-info {
                 flex-direction: column;
                 gap: 10px;
             }
-
+            
             .header-content {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
             }
-
+            
             .profile-photo {
                 width: 150px;
                 height: 150px;
@@ -205,22 +245,31 @@
 </head>
 <body>
     <header>
-        <h1>Hetal Patel</h1>
-        <p class="intro">
-            I am a Software Engineer with 5+ years of experience building backend systems, cloud-native deployments,
-            and developer productivity tooling. Currently focused on AI/ML platform engineering and MLOps at
-            <a href="https://www.sanofi.com/" class="company">Sanofi Pasteur</a>. I'm passionate about leveraging
-            AI-driven developer tools to build scalable, reliable infrastructure and accelerating engineering velocity
-            through automation. Fun fact: I love experimenting with cutting-edge AI workflows and have reduced deployment
-            lead times by ~50% through innovative CI/CD solutions!
-        </p>
-
-        <div class="contact-info">
-            <span>📧 <a href="mailto:hetal2311@gmail.com">hetal2311@gmail.com</a></span>
-            <span>📱 +1 (437) 233-3887</span>
-            <span>📍 Toronto, ON, Canada</span>
-            <span>💼 <a href="https://linkedin.com/in/hetal2311" target="_blank">LinkedIn</a></span>
-            <span>🐙 <a href="https://github.com/Hetal2311" target="_blank">GitHub</a></span>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Hetal Patel</h1>
+                <p class="intro">
+                    I am a Software Engineer with 5+ years of experience building backend systems, cloud-native deployments, 
+                    and developer productivity tooling. Currently focused on AI/ML platform engineering and MLOps at 
+                    <a href="https://www.sanofi.com/" class="company">Sanofi Pasteur</a>. I'm passionate about leveraging 
+                    AI-driven developer tools to build scalable, reliable infrastructure and accelerating engineering velocity 
+                    through automation. Fun fact: I love experimenting with cutting-edge AI workflows and have reduced deployment 
+                    lead times by ~50% through innovative CI/CD solutions!
+                </p>
+                
+                <div class="contact-info">
+                    <span>📧 <a href="mailto:hetal2311@gmail.com">hetal2311@gmail.com</a></span>
+                    <span>📱 +1 (437) 233-3887</span>
+                    <span>📍 Toronto, ON, Canada</span>
+                    <span>💼 <a href="https://linkedin.com/in/hetal2311" target="_blank">LinkedIn</a></span>
+                    <span>🐙 <a href="https://github.com/Hetal2311" target="_blank">GitHub</a></span>
+                </div>
+                
+                <a href="./Hetal-Resume.pdf" class="resume-download" target="_blank">
+                    📄 Download Resume
+                </a>
+            </div>
+            <img src="profile-photo.jpg" alt="Hetal Patel" class="profile-photo">
         </div>
     </header>
 
@@ -239,12 +288,12 @@
 
         <section class="section">
             <h2>Work Experience</h2>
-
+            
             <div class="experience-item">
                 <div class="job-title">Software Engineer - Data and AI Platform</div>
                 <a href="https://www.sanofi.com/" class="company">Sanofi Pasteur</a> <span class="date">Jul 2022 - Present</span>
                 <div class="description">
-                    Leading developer productivity initiatives and AI/ML platform development, building tools that accelerate
+                    Leading developer productivity initiatives and AI/ML platform development, building tools that accelerate 
                     engineering velocity and improve code quality across global teams.
                     <ul>
                         <li>Built standardized CI/CD pipelines with GitHub Actions + GitOps and ArgoCD, reducing deployment lead time by ~50%</li>
@@ -256,7 +305,7 @@
                     </ul>
                 </div>
             </div>
-
+            
             <div class="experience-item">
                 <div class="job-title">Software Developer Intern</div>
                 <a href="#" class="company">Synergy IT Solutions Group</a> <span class="date">Jun 2021 - Oct 2021</span>
@@ -268,7 +317,7 @@
                     </ul>
                 </div>
             </div>
-
+            
             <div class="experience-item">
                 <div class="job-title">Web Developer</div>
                 <a href="#" class="company">Teksun Microsys Pvt. Ltd</a> <span class="date">Jan 2019 - Dec 2019</span>
@@ -315,42 +364,42 @@
 
         <section class="section">
             <h2>Featured Projects</h2>
-
+            
             <div class="project-item">
                 <h3>
                     <a href="https://github.com/Hetal2311/llm-mlops-platform" class="project-link">LLM MLOps Platform</a>
                     <span class="project-status in-progress">In Progress</span>
                 </h3>
                 <div class="description">
-                    A comprehensive MLOps platform designed for Large Language Model workflows, featuring automated training pipelines,
-                    model versioning, deployment automation, and performance monitoring. Built with modern cloud-native technologies
-                    including Kubernetes, FastAPI, and AWS services. Includes LLM evaluation frameworks, embedding management,
+                    A comprehensive MLOps platform designed for Large Language Model workflows, featuring automated training pipelines, 
+                    model versioning, deployment automation, and performance monitoring. Built with modern cloud-native technologies 
+                    including Kubernetes, FastAPI, and AWS services. Includes LLM evaluation frameworks, embedding management, 
                     and production-ready serving capabilities.
                     <br><strong>Tech Stack:</strong> Python, FastAPI, Kubernetes, AWS SageMaker, MLflow, Prometheus, Docker
                 </div>
             </div>
-
+            
             <div class="project-item">
                 <h3>
                     <a href="https://github.com/Hetal2311/ai-powered-ci-cd" class="project-link">AI-Powered CI/CD Assistant</a>
                     <span class="project-status planned">Planned</span>
                 </h3>
                 <div class="description">
-                    An intelligent CI/CD pipeline assistant that leverages LLMs to automatically generate deployment configurations,
-                    analyze build failures, suggest optimizations, and provide intelligent code review feedback. Features include
+                    An intelligent CI/CD pipeline assistant that leverages LLMs to automatically generate deployment configurations, 
+                    analyze build failures, suggest optimizations, and provide intelligent code review feedback. Features include 
                     automated troubleshooting, smart resource allocation, and predictive deployment success scoring.
                     <br><strong>Planned Tech Stack:</strong> Python, GitHub Actions, OpenAI API, FastAPI, PostgreSQL, Redis
                 </div>
             </div>
-
+            
             <div class="project-item">
                 <h3>
                     <a href="https://github.com/Hetal2311/smart-observability-platform" class="project-link">Smart Observability Platform</a>
                     <span class="project-status planned">Planned</span>
                 </h3>
                 <div class="description">
-                    Next-generation observability platform that uses machine learning to predict system anomalies, automatically
-                    correlate incidents across services, and provide intelligent alerting with context-aware recommendations.
+                    Next-generation observability platform that uses machine learning to predict system anomalies, automatically 
+                    correlate incidents across services, and provide intelligent alerting with context-aware recommendations. 
                     Includes natural language query interface for metrics exploration and automated root cause analysis.
                     <br><strong>Planned Tech Stack:</strong> Go, Python, Prometheus, Grafana, TimescaleDB, TensorFlow, Kubernetes
                 </div>
@@ -359,17 +408,17 @@
 
         <section class="section">
             <h2>Certifications & Awards</h2>
-
+            
             <div class="award-item">
                 <div class="award-title">AWS Certified Machine Learning - Associate</div>
                 <a href="https://aws.amazon.com/certification/" class="award-org">Amazon Web Services</a> <span class="date">2025</span>
             </div>
-
+            
             <div class="award-item">
                 <div class="award-title">AWS Certified Solutions Architect - Associate</div>
                 <a href="https://aws.amazon.com/certification/" class="award-org">Amazon Web Services</a> <span class="date">2023</span>
             </div>
-
+            
             <div class="award-item">
                 <div class="award-title">AWS Certified Developer - Associate</div>
                 <a href="https://aws.amazon.com/certification/" class="award-org">Amazon Web Services</a> <span class="date">2021</span>
@@ -378,19 +427,19 @@
 
         <section class="section">
             <h2>Open Source & Community</h2>
-
+            
             <div class="description">
-                <strong>Contributions:</strong> Active contributor to MLOps and developer productivity tools.
+                <strong>Contributions:</strong> Active contributor to MLOps and developer productivity tools. 
                 Passionate about building tools that make developers' lives easier and sharing knowledge through open source projects.
             </div>
-
+            
             <div class="description">
-                <strong>Focus Areas:</strong> Currently exploring the intersection of AI and DevOps, building intelligent automation tools,
+                <strong>Focus Areas:</strong> Currently exploring the intersection of AI and DevOps, building intelligent automation tools, 
                 and contributing to the MLOps ecosystem. Interested in AI-powered developer productivity tools and modern observability solutions.
             </div>
-
+            
             <div class="description">
-                <strong>Community:</strong> Regular participant in Toronto tech meetups, AWS user groups, and ML engineering communities.
+                <strong>Community:</strong> Regular participant in Toronto tech meetups, AWS user groups, and ML engineering communities. 
                 Always excited to collaborate on innovative projects that push the boundaries of what's possible with AI and infrastructure.
             </div>
         </section>
@@ -398,8 +447,8 @@
         <section class="section">
             <h2>Current Interests</h2>
             <div class="description">
-                I'm currently exploring advanced MLOps patterns, LLM evaluation methodologies, and AI-driven developer productivity tools.
-                Particularly interested in how we can leverage AI to make software engineering more efficient, reliable, and enjoyable.
+                I'm currently exploring advanced MLOps patterns, LLM evaluation methodologies, and AI-driven developer productivity tools. 
+                Particularly interested in how we can leverage AI to make software engineering more efficient, reliable, and enjoyable. 
                 Always open to collaborating on projects that combine my passion for infrastructure automation with cutting-edge AI capabilities.
             </div>
         </section>
