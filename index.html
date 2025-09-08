@@ -1,208 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hetal Patel • Software Engineer – AI/ML Platform</title>
-  <meta name="description" content="Software Engineer focused on AI/ML platforms, MLOps, and developer productivity." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0b0d10; --panel:#12151b; --muted:#9aa3af; --text:#e5e7eb; --brand:#60a5fa; --accent:#a78bfa;
-      --ring: 0 0 0 3px rgba(96,165,250,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0; padding:0; font-family:Inter,system-ui,Arial,sans-serif; background:var(--bg); color:var(--text);}
-    a{color:var(--brand); text-decoration:none}
-    a:hover{color:#93c5fd}
-    .container{max-width:1100px; margin:0 auto; padding:24px}
-    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(10px); background:rgba(11,13,16,.7); border-bottom:1px solid rgba(255,255,255,.06); z-index:30}
-    nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
-    nav .brand{display:flex; align-items:center; gap:12px; font-weight:700}
-    nav .brand .dot{width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg,var(--brand),var(--accent))}
-    nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0}
-    nav li a{padding:10px 12px; border-radius:10px}
-    nav li a:hover{background:rgba(255,255,255,.06)}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetal Patel - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; padding:56px 0}
-    .card{background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.25)}
-    .pill{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; background:rgba(96,165,250,.12); color:#cfe4ff; font-size:12px; border:1px solid rgba(96,165,250,.25)}
-    h1{font-size:42px; line-height:1.1; margin:12px 0}
-    .muted{color:var(--muted)}
-    .row{display:flex; flex-wrap:wrap; gap:14px}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; background:linear-gradient(135deg,var(--brand),var(--accent)); border:none; color:white; border-radius:12px; font-weight:600}
-    .btn.ghost{background:transparent; border:1px solid rgba(255,255,255,.12); color:var(--text)}
-    .btn:focus{outline:none; box-shadow:var(--ring)}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #24292f;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
-    .span-8{grid-column:span 8}
-    .span-4{grid-column:span 4}
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1f2328;
+        }
 
-    section{padding:28px 0}
-    h2{font-size:26px; margin:0 0 10px}
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            color: #1f2328;
+            border-bottom: 1px solid #d1d9e0;
+            padding-bottom: 8px;
+        }
 
-    .timeline{display:flex; flex-direction:column; gap:12px}
-    .item{padding:16px; border-radius:14px; background:var(--panel); border:1px solid rgba(255,255,255,.08)}
-    .item h3{margin:0 0 6px; font-size:18px}
-    .item .meta{font-size:12px; color:var(--muted)}
-    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .tag{font-size:12px; padding:6px 10px; border:1px solid rgba(255,255,255,.12); border-radius:999px; color:#dbeafe; background:rgba(59,130,246,.08)}
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+            color: #1f2328;
+        }
 
-    .project{display:flex; flex-direction:column; gap:10px}
-    .project h3{margin:0}
-    .project p{margin:0}
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #656d76;
+        }
 
-    footer{padding:40px 0; color:var(--muted)}
+        .contact-info {
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-      .grid{grid-template-columns:repeat(6,1fr)}
-      .span-8{grid-column:span 6}
-      .span-4{grid-column:span 6}
-    }
-  </style>
+        .contact-info a {
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 30px;
+        }
+
+        .job-title {
+            font-weight: 600;
+            color: #1f2328;
+        }
+
+        .company {
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .company:hover {
+            text-decoration: underline;
+        }
+
+        .date {
+            color: #656d76;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+
+        .description {
+            margin-top: 8px;
+            color: #24292f;
+        }
+
+        .description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .description li {
+            margin-bottom: 4px;
+        }
+
+        .project-link {
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #f6f8fa;
+            border: 1px solid #d1d9e0;
+            border-radius: 16px;
+            padding: 4px 12px;
+            font-size: 0.875rem;
+            color: #24292f;
+        }
+
+        .award-item {
+            margin-bottom: 15px;
+        }
+
+        .award-title {
+            font-weight: 600;
+            color: #1f2328;
+        }
+
+        .award-org {
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .award-org:hover {
+            text-decoration: underline;
+        }
+
+        .project-status {
+            display: inline-block;
+            background-color: #dafbe1;
+            color: #1a7f37;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 8px;
+        }
+
+        .project-status.planned {
+            background-color: #fff8c5;
+            color: #9a6700;
+        }
+
+        .project-status.in-progress {
+            background-color: #ddf4ff;
+            color: #0969da;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand"><span class="dot"></span> Hetal Patel</div>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <h1>Hetal Patel</h1>
+        <p class="intro">
+            I am a Software Engineer with 5+ years of experience building backend systems, cloud-native deployments,
+            and developer productivity tooling. Currently focused on AI/ML platform engineering and MLOps at
+            <a href="https://www.sanofi.com/" class="company">Sanofi Pasteur</a>. I'm passionate about leveraging
+            AI-driven developer tools to build scalable, reliable infrastructure and accelerating engineering velocity
+            through automation. Fun fact: I love experimenting with cutting-edge AI workflows and have reduced deployment
+            lead times by ~50% through innovative CI/CD solutions!
+        </p>
 
-  <main class="container">
-    <section class="hero">
-      <div class="card">
-        <span class="pill">Software Engineer • AI/ML Platform • MLOps</span>
-        <h1>Building reliable ML platforms & developer tooling.</h1>
-        <p class="muted">Toronto-based Software Engineer with 5+ years in backend systems, cloud-native infrastructure, and ML platforms. I design CI/CD, Kubernetes deployments, and observability for teams shipping AI features with confidence.</p>
-        <div class="row" style="margin-top:14px">
-          <a class="btn" href="mailto:hetal2311@gmail.com">Contact me</a>
-          <a class="btn ghost" href="Hetal-Resume.pdf" target="_blank">View Resume</a>
-          <a class="btn ghost" href="https://github.com/Hetal2311" target="_blank">GitHub</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/hetal2311" target="_blank">LinkedIn</a>
+        <div class="contact-info">
+            <span>📧 <a href="mailto:hetal2311@gmail.com">hetal2311@gmail.com</a></span>
+            <span>📱 +1 (437) 233-3887</span>
+            <span>📍 Toronto, ON, Canada</span>
+            <span>💼 <a href="https://linkedin.com/in/hetal2311" target="_blank">LinkedIn</a></span>
+            <span>🐙 <a href="https://github.com/Hetal2311" target="_blank">GitHub</a></span>
         </div>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px">Quick Stats</h3>
-        <ul class="muted" style="line-height:1.8; padding-left:18px; margin:10px 0 0">
-          <li>5+ years experience • AWS Certified (SAA, DVA, ML-Specialty)</li>
-          <li>CI/CD, GitOps, Docker, Kubernetes (EKS), Argo CD</li>
-          <li>LLMs, embeddings, semantic search (OneSearch)</li>
-          <li>Observability: Grafana, Prometheus, CloudWatch</li>
-        </ul>
-      </div>
-    </section>
+    </header>
 
-    <section id="about" class="grid">
-      <div class="span-8">
-        <h2>About</h2>
-        <p class="muted">I work at the intersection of software engineering and machine learning platforms—designing microservices, CI/CD workflows, and cloud infrastructure that make ML features shippable, observable, and scalable.</p>
-      </div>
-      <div class="span-4 card">
-        <strong>Location:</strong> Toronto, ON, Canada<br/>
-        <strong>Email:</strong> <a href="mailto:hetal2311@gmail.com">hetal2311@gmail.com</a><br/>
-        <strong>Open to:</strong> AI Platform • MLOps • Developer Productivity
-      </div>
-    </section>
+    <main>
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <strong>Bachelor of Engineering (Information Technology)</strong><br>
+                <a href="https://www.gujaratuniversity.ac.in/" class="company">Gujarat University</a> <span class="date">2010</span>
+            </div>
+            <div class="education-item">
+                <strong>Diploma in Engineering (Information Technology)</strong><br>
+                <a href="https://www.nirmauni.ac.in/" class="company">Nirma University</a> <span class="date">2006</span>
+            </div>
+        </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="item">
-          <h3>Software Engineer – Data & AI Platform • Sanofi</h3>
-          <div class="meta">Jul 2022 – Present • Toronto, Canada</div>
-          <p>Built OneAI (internal MLOps platform) and OneSearch (LLM-enabled search). Standardized CI/CD with GitHub Actions + GitOps, containerized services on AWS EKS with Argo CD, and improved MTTR with Grafana/Prometheus/CloudWatch.</p>
-          <div class="tags">
-            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Argo CD</span><span class="tag">GitHub Actions</span><span class="tag">AWS EKS</span><span class="tag">Grafana/Prometheus</span>
-          </div>
-        </div>
-        <div class="item">
-          <h3>Software Developer Intern • Synergy IT Solutions</h3>
-          <div class="meta">Jun 2021 – Oct 2021 • Toronto, Canada</div>
-          <p>Automated ERP workflows in Python/Odoo to cut manual tasks by 30%.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Odoo</span></div>
-        </div>
-      </div>
-    </section>
+        <section class="section">
+            <h2>Work Experience</h2>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="span-4 card project">
-          <h3>LLM MLOps Platform</h3>
-          <p class="muted">End-to-end pipeline for LLM fine-tuning, containerized inference, CI/CD, K8s deploy, and monitoring.</p>
-          <a href="https://github.com/Hetal2311/llm-mlops-platform" target="_blank">View Repo</a>
-        </div>
-        <div class="span-4 card project">
-          <h3>RAG Semantic Search</h3>
-          <p class="muted">Embeddings + FAISS + LLM answer generation. Streamlit UI, swappable providers.</p>
-          <a href="#" target="_blank">Repo (coming soon)</a>
-        </div>
-        <div class="span-4 card project">
-          <h3>AI-Assisted Smoke Tests</h3>
-          <p class="muted">Pytest + Tavern CI for microservices with OpenAPI-driven test generation.</p>
-          <a href="#" target="_blank">Repo (coming soon)</a>
-        </div>
-      </div>
-    </section>
+            <div class="experience-item">
+                <div class="job-title">Software Engineer - Data and AI Platform</div>
+                <a href="https://www.sanofi.com/" class="company">Sanofi Pasteur</a> <span class="date">Jul 2022 - Present</span>
+                <div class="description">
+                    Leading developer productivity initiatives and AI/ML platform development, building tools that accelerate
+                    engineering velocity and improve code quality across global teams.
+                    <ul>
+                        <li>Built standardized CI/CD pipelines with GitHub Actions + GitOps and ArgoCD, reducing deployment lead time by ~50%</li>
+                        <li>Developed internal repo templates (FastAPI, PySpark, Metaflow, EMR) cutting onboarding time by ~40% for global teams</li>
+                        <li>Designed containerized backend services on AWS EKS with Kubernetes, improving system reliability by 30%</li>
+                        <li>Enhanced observability via Grafana, Prometheus, and CloudWatch, reducing production incident MTTR by 25%</li>
+                        <li>Partnered with DS/ML teams to evaluate embedding and LLM-based retrieval techniques for production AI scaling</li>
+                        <li>Authored internal runbooks and documentation, mentoring peers and improving team productivity by 20%</li>
+                    </ul>
+                </div>
+            </div>
 
-    <section id="skills" class="grid">
-      <div class="span-8">
-        <h2>Skills</h2>
-        <div class="row">
-          <div class="card" style="flex:1">
-            <strong>Languages</strong>
-            <p class="muted">Python, SQL, JavaScript (Go exposure)</p>
-          </div>
-          <div class="card" style="flex:1">
-            <strong>Platforms</strong>
-            <p class="muted">AWS (EKS, Lambda, S3, CloudWatch), Kubernetes, Docker, Argo CD</p>
-          </div>
-          <div class="card" style="flex:1">
-            <strong>ML/AI</strong>
-            <p class="muted">LLMs, embeddings, semantic search, RAG, SageMaker (train/infer)</p>
-          </div>
-          <div class="card" style="flex:1">
-            <strong>Data</strong>
-            <p class="muted">Snowflake, Informatica Cloud, ETL pipelines, Elasticsearch</p>
-          </div>
-        </div>
-      </div>
-      <div class="span-4 card">
-        <strong>Certifications</strong>
-        <ul class="muted">
-          <li>AWS Certified Machine Learning – Associate (2025)</li>
-          <li>AWS Solutions Architect – Associate (2023)</li>
-          <li>AWS Developer – Associate (2021)</li>
-        </ul>
-      </div>
-    </section>
+            <div class="experience-item">
+                <div class="job-title">Software Developer Intern</div>
+                <a href="#" class="company">Synergy IT Solutions Group</a> <span class="date">Jun 2021 - Oct 2021</span>
+                <div class="description">
+                    Focused on automation and workflow optimization in enterprise environments.
+                    <ul>
+                        <li>Automated ERP workflows in Python/Odoo, cutting manual sales/CRM tasks by 30%</li>
+                        <li>Collaborated with business stakeholders to identify automation opportunities</li>
+                    </ul>
+                </div>
+            </div>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p class="muted">Email: <a href="mailto:hetal2311@gmail.com">hetal2311@gmail.com</a></p>
-      <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/hetal2311" target="_blank">linkedin.com/in/hetal2311</a></p>
-      <p class="muted">GitHub: <a href="https://github.com/Hetal2311" target="_blank">github.com/Hetal2311</a></p>
-    </section>
+            <div class="experience-item">
+                <div class="job-title">Web Developer</div>
+                <a href="#" class="company">Teksun Microsys Pvt. Ltd</a> <span class="date">Jan 2019 - Dec 2019</span>
+                <div class="description">
+                    Developed IoT solutions and serverless architectures for scalable web applications.
+                    <ul>
+                        <li>Built REST APIs for IoT systems using AWS Lambda + DynamoDB</li>
+                        <li>Reduced infrastructure overhead by 20% with serverless architectures</li>
+                        <li>Implemented real-time data processing for IoT device management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-      <div>© <span id="y"></span> Hetal Patel • Built with ❤️ on GitHub Pages</div>
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Go</span>
+                <span class="skill-tag">GitHub Actions</span>
+                <span class="skill-tag">GitOps</span>
+                <span class="skill-tag">ArgoCD</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">AWS EKS</span>
+                <span class="skill-tag">AWS Lambda</span>
+                <span class="skill-tag">DynamoDB</span>
+                <span class="skill-tag">S3</span>
+                <span class="skill-tag">SageMaker</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">PySpark</span>
+                <span class="skill-tag">Metaflow</span>
+                <span class="skill-tag">Grafana</span>
+                <span class="skill-tag">Prometheus</span>
+                <span class="skill-tag">CloudWatch</span>
+                <span class="skill-tag">Elasticsearch</span>
+                <span class="skill-tag">LLM Evaluation</span>
+                <span class="skill-tag">Embeddings</span>
+                <span class="skill-tag">RAG</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Featured Projects</h2>
+
+            <div class="project-item">
+                <h3>
+                    <a href="https://github.com/Hetal2311/llm-mlops-platform" class="project-link">LLM MLOps Platform</a>
+                    <span class="project-status in-progress">In Progress</span>
+                </h3>
+                <div class="description">
+                    A comprehensive MLOps platform designed for Large Language Model workflows, featuring automated training pipelines,
+                    model versioning, deployment automation, and performance monitoring. Built with modern cloud-native technologies
+                    including Kubernetes, FastAPI, and AWS services. Includes LLM evaluation frameworks, embedding management,
+                    and production-ready serving capabilities.
+                    <br><strong>Tech Stack:</strong> Python, FastAPI, Kubernetes, AWS SageMaker, MLflow, Prometheus, Docker
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>
+                    <a href="https://github.com/Hetal2311/ai-powered-ci-cd" class="project-link">AI-Powered CI/CD Assistant</a>
+                    <span class="project-status planned">Planned</span>
+                </h3>
+                <div class="description">
+                    An intelligent CI/CD pipeline assistant that leverages LLMs to automatically generate deployment configurations,
+                    analyze build failures, suggest optimizations, and provide intelligent code review feedback. Features include
+                    automated troubleshooting, smart resource allocation, and predictive deployment success scoring.
+                    <br><strong>Planned Tech Stack:</strong> Python, GitHub Actions, OpenAI API, FastAPI, PostgreSQL, Redis
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>
+                    <a href="https://github.com/Hetal2311/smart-observability-platform" class="project-link">Smart Observability Platform</a>
+                    <span class="project-status planned">Planned</span>
+                </h3>
+                <div class="description">
+                    Next-generation observability platform that uses machine learning to predict system anomalies, automatically
+                    correlate incidents across services, and provide intelligent alerting with context-aware recommendations.
+                    Includes natural language query interface for metrics exploration and automated root cause analysis.
+                    <br><strong>Planned Tech Stack:</strong> Go, Python, Prometheus, Grafana, TimescaleDB, TensorFlow, Kubernetes
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Certifications & Awards</h2>
+
+            <div class="award-item">
+                <div class="award-title">AWS Certified Machine Learning - Associate</div>
+                <a href="https://aws.amazon.com/certification/" class="award-org">Amazon Web Services</a> <span class="date">2025</span>
+            </div>
+
+            <div class="award-item">
+                <div class="award-title">AWS Certified Solutions Architect - Associate</div>
+                <a href="https://aws.amazon.com/certification/" class="award-org">Amazon Web Services</a> <span class="date">2023</span>
+            </div>
+
+            <div class="award-item">
+                <div class="award-title">AWS Certified Developer - Associate</div>
+                <a href="https://aws.amazon.com/certification/" class="award-org">Amazon Web Services</a> <span class="date">2021</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Open Source & Community</h2>
+
+            <div class="description">
+                <strong>Contributions:</strong> Active contributor to MLOps and developer productivity tools.
+                Passionate about building tools that make developers' lives easier and sharing knowledge through open source projects.
+            </div>
+
+            <div class="description">
+                <strong>Focus Areas:</strong> Currently exploring the intersection of AI and DevOps, building intelligent automation tools,
+                and contributing to the MLOps ecosystem. Interested in AI-powered developer productivity tools and modern observability solutions.
+            </div>
+
+            <div class="description">
+                <strong>Community:</strong> Regular participant in Toronto tech meetups, AWS user groups, and ML engineering communities.
+                Always excited to collaborate on innovative projects that push the boundaries of what's possible with AI and infrastructure.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Current Interests</h2>
+            <div class="description">
+                I'm currently exploring advanced MLOps patterns, LLM evaluation methodologies, and AI-driven developer productivity tools.
+                Particularly interested in how we can leverage AI to make software engineering more efficient, reliable, and enjoyable.
+                Always open to collaborating on projects that combine my passion for infrastructure automation with cutting-edge AI capabilities.
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #d1d9e0; text-align: center; color: #656d76;">
+        <p>© 2025 Hetal Patel. Built with ❤️ for the developer community.</p>
     </footer>
-  </main>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
